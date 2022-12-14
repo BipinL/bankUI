@@ -9,7 +9,7 @@ class HomeView extends StatelessWidget {
     num ff2f26d9;
     return SafeArea(
       child: Scaffold(
-        backgroundColor: Color(0xff2f26d9),
+        backgroundColor: const Color(0xff2f26d9),
         body: SingleChildScrollView(
           child: Column(
             children: [
@@ -79,7 +79,7 @@ class HomeView extends StatelessWidget {
                           child: Container(
                             height: 180,
                             width: 140,
-                            color: Color(0xffffe6d7),
+                            color: const Color(0xffffe6d7),
                           ),
                         ),
                       ),
@@ -92,7 +92,48 @@ class HomeView extends StatelessWidget {
                 child: Container(
                   height: 400,
                   width: Get.size.width,
-                  color: Color(0xffffffff),
+                  color: const Color(0xffffffff),
+                  child: Column(
+                    children: [
+                      Padding(
+                        padding: EdgeInsets.all(8.0),
+                        child: ListTile(
+                          title: Text(
+                            "Transactions",
+                            style: TextStyle(fontSize: 25),
+                          ),
+                          trailing: Text(
+                            "See all",
+                            style: TextStyle(fontSize: 20),
+                          ),
+                        ),
+                      ),
+                      Row(
+                        children: [
+                          Padding(
+                            padding: const EdgeInsets.symmetric(horizontal: 15),
+                            child: ClipRRect(
+                              borderRadius: BorderRadius.circular(40),
+                              child: Container(
+                                height: 70,
+                                width: 70,
+                                color: Colors.amber,
+                                child: Icon(
+                                  Icons.local_taxi_rounded,
+                                  size: 30,
+                                ),
+                              ),
+                            ),
+                          ),
+                          Text(
+                            "Car purchase",
+                            style: TextStyle(
+                                fontSize: 18, fontWeight: FontWeight.w600),
+                          ),
+                        ],
+                      )
+                    ],
+                  ),
                 ),
               )
             ],
