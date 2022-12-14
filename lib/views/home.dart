@@ -66,7 +66,26 @@ class HomeView extends StatelessWidget {
                             height: 180,
                             width: 140,
                             child: Column(
-                              children: [],
+                              children: const [
+                                Expanded(
+                                  child: Icon(
+                                    Icons.icecream_outlined,
+                                    size: 60,
+                                  ),
+                                ),
+                                Text(
+                                  "Expense",
+                                  style: TextStyle(
+                                      fontSize: 24,
+                                      fontWeight: FontWeight.bold),
+                                ),
+                                Text(
+                                  "Rs.5,00,000",
+                                  style: TextStyle(
+                                      fontSize: 24,
+                                      fontWeight: FontWeight.bold),
+                                )
+                              ],
                             ),
                             color: const Color(0xffc4f2ff),
                           ),
@@ -80,6 +99,28 @@ class HomeView extends StatelessWidget {
                             height: 180,
                             width: 140,
                             color: const Color(0xffffe6d7),
+                            child: Column(
+                              children: const [
+                                Expanded(
+                                  child: Icon(
+                                    Icons.icecream_outlined,
+                                    size: 60,
+                                  ),
+                                ),
+                                Text(
+                                  "Expense",
+                                  style: TextStyle(
+                                      fontSize: 24,
+                                      fontWeight: FontWeight.bold),
+                                ),
+                                Text(
+                                  "Rs.5,00,000",
+                                  style: TextStyle(
+                                      fontSize: 24,
+                                      fontWeight: FontWeight.bold),
+                                )
+                              ],
+                            ),
                           ),
                         ),
                       ),
@@ -95,7 +136,7 @@ class HomeView extends StatelessWidget {
                   color: const Color(0xffffffff),
                   child: Column(
                     children: [
-                      Padding(
+                      const Padding(
                         padding: EdgeInsets.all(8.0),
                         child: ListTile(
                           title: Text(
@@ -117,19 +158,97 @@ class HomeView extends StatelessWidget {
                               child: Container(
                                 height: 70,
                                 width: 70,
-                                color: Colors.amber,
-                                child: Icon(
+                                color: const Color(0xff0ec184),
+                                child: const Icon(
                                   Icons.local_taxi_rounded,
                                   size: 30,
+                                  color: Colors.white,
                                 ),
                               ),
                             ),
                           ),
-                          Text(
+                          const Text(
                             "Car purchase",
                             style: TextStyle(
                                 fontSize: 18, fontWeight: FontWeight.w600),
                           ),
+                          const Padding(
+                            padding: EdgeInsets.symmetric(horizontal: 35),
+                            child: Text(
+                              "Rs.2,00,000",
+                              style: TextStyle(fontWeight: FontWeight.bold),
+                            ),
+                          )
+                        ],
+                      ),
+                      const SizedBox(
+                        height: 15,
+                      ),
+                      Row(
+                        children: [
+                          Padding(
+                            padding: const EdgeInsets.symmetric(horizontal: 15),
+                            child: ClipRRect(
+                              borderRadius: BorderRadius.circular(40),
+                              child: Container(
+                                height: 70,
+                                width: 70,
+                                color: const Color(0xff0ec184),
+                                child: const Icon(
+                                  Icons.home,
+                                  size: 30,
+                                  color: Colors.white,
+                                ),
+                              ),
+                            ),
+                          ),
+                          const Text(
+                            "Car purchase",
+                            style: TextStyle(
+                                fontSize: 18, fontWeight: FontWeight.w600),
+                          ),
+                          const Padding(
+                            padding: EdgeInsets.symmetric(horizontal: 35),
+                            child: Text(
+                              "Rs.4,00,000",
+                              style: TextStyle(fontWeight: FontWeight.bold),
+                            ),
+                          )
+                        ],
+                      ),
+                      const SizedBox(
+                        height: 15,
+                      ),
+                      Row(
+                        children: [
+                          Padding(
+                            padding: const EdgeInsets.symmetric(horizontal: 15),
+                            child: ClipRRect(
+                              borderRadius: BorderRadius.circular(40),
+                              child: Container(
+                                height: 70,
+                                width: 70,
+                                color: const Color(0xff0ec184),
+                                child: const Icon(
+                                  Icons.shopping_bag,
+                                  size: 30,
+                                  color: Colors.white,
+                                ),
+                              ),
+                            ),
+                          ),
+                          const Text(
+                            "Car purchase",
+                            style: TextStyle(
+                                fontSize: 18, fontWeight: FontWeight.w600),
+                          ),
+                          const Padding(
+                            padding: EdgeInsets.symmetric(horizontal: 35),
+                            child: Text(
+                              "Rs.2,00,000",
+                              style: TextStyle(fontWeight: FontWeight.bold),
+                            ),
+                          )
                         ],
                       )
                     ],
